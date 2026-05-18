@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO -->
+<title>AfricaBridge · Lancez votre entreprise en Afrique en 3 mois</title>
+<meta name="description" content="Accompagnement entrepreneurial 1-to-1 pour la diaspora africaine en Europe. De l'idée aux premiers revenus en 3 mois. Sénégal, Côte d'Ivoire, Cameroun et plus.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://africabridge.com">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://africabridge.com">
+<meta property="og:title" content="AfricaBridge · Lancez votre entreprise en Afrique en 3 mois">
+<meta property="og:description" content="Accompagnement 1-to-1 pour la diaspora africaine en Europe. De l'idée aux premiers revenus en 3 mois.">
+<meta property="og:image" content="https://africabridge.com/og-image.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="AfricaBridge">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AfricaBridge · Lancez votre entreprise en Afrique en 3 mois">
+<meta name="twitter:description" content="Accompagnement 1-to-1 pour la diaspora africaine en Europe. De l'idée aux premiers revenus en 3 mois.">
+<meta name="twitter:image" content="https://africabridge.com/og-image.jpg">
+
+<!-- Favicon (inline SVG, no file needed) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0905'/%3E%3Ctext x='16' y='23' font-family='Georgia%2Cserif' font-size='15' font-weight='700' text-anchor='middle' fill='%23c8902c'%3EAB%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Schema.org structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "name": "AfricaBridge",
+      "description": "Accompagnement entrepreneurial 1-to-1 pour la diaspora africaine en Europe souhaitant lancer une entreprise en Afrique de l'Ouest ou Centrale.",
+      "url": "https://africabridge.com",
+      "email": "africabridge@gmail.com",
+      "areaServed": "Europe",
+      "serviceType": "Business Coaching",
+      "founder": { "@type": "Person", "name": "Abdoulaye" }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Dois-je déjà avoir un projet précis pour commencer ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Non, vous pouvez avoir une idée encore floue. La première session sert précisément à valider votre concept, affiner votre offre et identifier le pays le plus adapté." }
+        },
+        {
+          "@type": "Question",
+          "name": "Est-ce que vous accompagnez tous les secteurs d'activité ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "La majorité des secteurs sont couverts : commerce, services, tech, agroalimentaire, immobilier, éducation, santé." }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il se rendre en Afrique pendant les 3 mois ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Pas forcément. L'accompagnement est conçu pour être opérationnel à 100% à distance." }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment se passent les sessions de travail ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Les sessions se font en visioconférence (Zoom ou Google Meet), avec un compte-rendu écrit après chaque session et des actions concrètes à réaliser." }
+        },
+        {
+          "@type": "Question",
+          "name": "Et si mon projet n'est pas encore financé ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "L'accompagnement inclut une réflexion sur le financement de votre projet. Certains clients utilisent leurs économies, d'autres cherchent des investisseurs ou des prêts diaspora." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+:root {
+  --bg: #0d0905;
+  --bg-card: #17100a;
+  --bg-card2: #1f1409;
+  --terra: #c0501a;
+  --terra-h: #d05e22;
+  --gold: #c8902c;
+  --gold-h: #dba03a;
+  --cream: #f4e6c8;
+  --cream-dim: #c0a87e;
+  --muted: #7a6548;
+  --border: rgba(200,144,44,.18);
+  --border-h: rgba(200,144,44,.45);
+  --error: #e05252;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;line-height:1.6}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:1.15}
+
+/* ── LANG SWITCHER ── */
+.lang-sw{position:fixed;bottom:1.5rem;left:1.5rem;z-index:1100;display:flex;gap:.3rem;background:rgba(13,9,5,.85);backdrop-filter:blur(12px);border:1px solid var(--border);border-radius:2rem;padding:.3rem}
+.lang-btn{background:none;border:none;color:var(--cream-dim);font-family:'Inter',sans-serif;font-size:.72rem;font-weight:500;letter-spacing:.06em;padding:.38rem .8rem;border-radius:1.5rem;cursor:pointer;transition:all .25s}
+.lang-btn.active{background:var(--gold);color:var(--bg)}
+.lang-btn:hover:not(.active){color:var(--cream)}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.4rem 2rem;display:flex;align-items:center;justify-content:space-between;transition:all .3s}
+nav.scrolled{background:rgba(13,9,5,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:1rem 2rem}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:600;color:var(--cream);text-decoration:none;letter-spacing:.03em}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--cream-dim);text-decoration:none;font-size:.85rem;transition:color .25s}
+.nav-links a:hover{color:var(--cream)}
+.nav-cta{background:var(--terra)!important;color:var(--cream)!important;padding:.55rem 1.3rem;border-radius:2rem;font-weight:500!important;transition:background .25s!important}
+.nav-cta:hover{background:var(--terra-h)!important}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:.4rem}
+.burger span{display:block;width:22px;height:2px;background:var(--cream);transition:all .3s;border-radius:2px}
+
+/* ── MOBILE NAV DRAWER ── */
+.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(13,9,5,.98);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-family:'Cormorant Garamond',serif;font-size:2rem;color:var(--cream);text-decoration:none;transition:color .25s}
+.mobile-nav a:hover{color:var(--gold)}
+.mobile-close{position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--cream);font-size:1.5rem;cursor:pointer}
+
+/* ── STICKY MOBILE CTA ── */
+.sticky-cta{display:none;position:fixed;bottom:0;left:0;right:0;z-index:1050;padding:.75rem 1.25rem;background:rgba(13,9,5,.97);backdrop-filter:blur(16px);border-top:1px solid var(--border);transform:translateY(100%);transition:transform .35s ease}
+.sticky-cta.visible{transform:translateY(0)}
+.sticky-cta a{display:block;text-align:center;background:var(--terra);color:#fff;padding:.85rem 1rem;border-radius:2rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:500;text-decoration:none;transition:background .25s;box-shadow:0 4px 20px rgba(192,80,26,.35)}
+.sticky-cta a:hover{background:var(--terra-h)}
+@media(max-width:900px){.sticky-cta{display:block}}
+
+/* ── UTILS ── */
+.section-wrap{padding:6rem 2rem;max-width:1160px;margin:0 auto}
+.label{font-size:.72rem;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.section-title{font-size:clamp(1.9rem,3.5vw,2.9rem);color:var(--cream);margin-bottom:1.25rem}
+.section-sub{font-size:1rem;color:var(--cream-dim);max-width:580px;line-height:1.75}
+.fade{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}
+.fade.visible{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+/* ── BUTTONS ── */
+.btn-p{background:var(--terra);color:#fff;border:none;padding:.95rem 2rem;border-radius:3rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:500;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:all .3s;box-shadow:0 4px 22px rgba(192,80,26,.28)}
+.btn-p:hover{background:var(--terra-h);transform:translateY(-2px);box-shadow:0 8px 32px rgba(192,80,26,.38)}
+.btn-s{background:transparent;color:var(--cream);border:1px solid var(--border);padding:.95rem 2rem;border-radius:3rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:400;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:.4rem;transition:all .3s}
+.btn-s:hover{border-color:var(--border-h);background:rgba(200,144,44,.05)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:9rem 2rem 5rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 20% 50%,rgba(192,80,26,.14) 0%,transparent 60%),radial-gradient(ellipse 50% 50% at 80% 20%,rgba(200,144,44,.09) 0%,transparent 55%),radial-gradient(ellipse 60% 40% at 55% 85%,rgba(192,80,26,.07) 0%,transparent 55%)}
+.hero-pattern{position:absolute;inset:0;opacity:.4;background-image:url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 2L50 26 26 50 2 26z' fill='none' stroke='%23c8902c' stroke-width='.3' stroke-opacity='.12'/%3E%3C/svg%3E")}
+.hero-inner{position:relative;z-index:1;max-width:820px}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(200,144,44,.08);border:1px solid rgba(200,144,44,.28);color:var(--gold);font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:.4rem 1rem;border-radius:2rem;margin-bottom:2rem}
+.badge-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.6)}}
+.hero-title{font-size:clamp(3rem,6.5vw,5.2rem);font-weight:600;line-height:1.06;margin-bottom:1.5rem;color:var(--cream)}
+.hero-title em{color:var(--gold);font-style:italic}
+.hero-sub{font-size:clamp(.95rem,1.8vw,1.15rem);color:var(--cream-dim);max-width:560px;margin:0 auto 2.5rem;line-height:1.75;font-weight:300}
+.hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.hero-stats{display:flex;gap:3rem;justify-content:center;margin-top:4.5rem;flex-wrap:wrap}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:600;color:var(--gold);line-height:1}
+.stat-l{font-size:.72rem;color:var(--cream-dim);margin-top:.2rem;letter-spacing:.04em}
+
+/* ── PROBLEM ── */
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.prob-card{background:var(--bg-card);border:1px solid var(--border);border-radius:1.4rem;padding:2rem;transition:all .3s;position:relative;overflow:hidden}
+.prob-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--terra),var(--gold));transform:scaleX(0);transition:transform .3s;transform-origin:left}
+.prob-card:hover::after{transform:scaleX(1)}
+.prob-card:hover{border-color:var(--border-h);transform:translateY(-4px)}
+.prob-icon{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--terra);opacity:.7;margin-bottom:1.3rem;line-height:1}
+.prob-card h3{font-size:1.25rem;color:var(--cream);margin-bottom:.65rem}
+.prob-card p{font-size:.875rem;color:var(--cream-dim);line-height:1.65}
+
+/* ── SOLUTION ── */
+.sol-grid{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;align-items:start;margin-top:3rem}
+.timeline{display:flex;flex-direction:column}
+.month{display:flex;gap:1.5rem;position:relative}
+.month:not(:last-child)::after{content:'';position:absolute;left:1.15rem;top:3.2rem;bottom:-1rem;width:1px;background:linear-gradient(to bottom,var(--gold),transparent)}
+.m-dot{width:2.3rem;height:2.3rem;border-radius:50%;background:var(--bg-card);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:'Cormorant Garamond',serif;font-size:.88rem;font-weight:600;color:var(--gold);margin-top:.2rem}
+.m-body{padding-bottom:2.5rem}
+.m-label{font-size:.68rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--terra);margin-bottom:.2rem}
+.m-title{font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--cream);margin-bottom:.5rem}
+.m-list{list-style:none;margin-top:.6rem}
+.m-list li{font-size:.82rem;color:var(--cream-dim);padding:.18rem 0;display:flex;gap:.5rem}
+.m-list li::before{content:'→';color:var(--gold);flex-shrink:0}
+.sol-box{background:var(--bg-card);border:1px solid var(--border);border-radius:1.8rem;padding:2.5rem;text-align:center;position:sticky;top:7rem}
+.result-pill{display:inline-flex;align-items:center;gap:.4rem;background:rgba(200,144,44,.08);border:1px solid rgba(200,144,44,.28);color:var(--gold);font-size:.75rem;padding:.35rem .9rem;border-radius:2rem;margin-bottom:1.5rem}
+.result-n{font-family:'Cormorant Garamond',serif;font-size:5.5rem;font-weight:600;color:var(--gold);line-height:1}
+.result-unit{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--cream-dim)}
+.result-sub{font-size:.85rem;color:var(--cream-dim);margin-top:.4rem}
+.sol-note{font-size:.8rem;color:var(--muted);font-style:italic;margin-top:1.5rem}
+
+/* ── PRICING ── */
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem;align-items:stretch}
+.p-card{background:var(--bg-card);border:1px solid var(--border);border-radius:1.8rem;padding:2.4rem;display:flex;flex-direction:column;transition:all .3s;position:relative}
+.p-card:hover{transform:translateY(-4px);border-color:var(--border-h)}
+.p-card.feat{background:var(--bg-card2);border-color:rgba(200,144,44,.38);transform:scale(1.025)}
+.p-card.feat:hover{transform:scale(1.025) translateY(-4px)}
+.pop-badge{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,var(--terra),var(--gold));color:#fff;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.28rem .9rem;border-radius:2rem;white-space:nowrap}
+.plan-name{font-family:'Cormorant Garamond',serif;font-size:1.45rem;color:var(--cream);margin-bottom:.4rem}
+.plan-desc{font-size:.8rem;color:var(--cream-dim);margin-bottom:1.4rem;line-height:1.55}
+.plan-feats{list-style:none;flex:1;margin-bottom:1.8rem}
+.plan-feats li{font-size:.855rem;color:var(--cream-dim);padding:.55rem 0;border-bottom:1px solid rgba(244,230,200,.05);display:flex;gap:.7rem;align-items:flex-start}
+.plan-feats li:last-child{border:none}
+.ck{width:16px;height:2px;background:var(--gold);flex-shrink:0;margin-top:.65rem;display:block;border-radius:1px}
+.btn-plan{width:100%;text-align:center;padding:.88rem;border-radius:2rem;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:500;cursor:pointer;text-decoration:none;display:block;border:none;transition:all .3s}
+.btn-outline{background:transparent;border:1px solid var(--border);color:var(--cream)}
+.btn-outline:hover{border-color:var(--border-h);background:rgba(200,144,44,.05)}
+.btn-fill{background:var(--terra);color:#fff;box-shadow:0 4px 20px rgba(192,80,26,.28)}
+.btn-fill:hover{background:var(--terra-h);box-shadow:0 6px 28px rgba(192,80,26,.38)}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:center}
+.photo-wrap{position:relative}
+.photo-box{width:100%;aspect-ratio:3/4;background:linear-gradient(145deg,var(--bg-card2),var(--bg-card));border:1px solid var(--border);border-radius:1.8rem;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.photo-monogram{font-family:'Cormorant Garamond',serif;font-size:6rem;font-weight:300;color:var(--gold);opacity:.22;letter-spacing:.05em;user-select:none}
+.photo-accent{position:absolute;bottom:-1.4rem;right:-1.4rem;width:110px;height:110px;background:rgba(192,80,26,.1);border:1px solid rgba(192,80,26,.28);border-radius:1.3rem;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:.8rem}
+.acc-n{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:600;color:var(--terra);line-height:1}
+.acc-l{font-size:.62rem;color:var(--cream-dim);line-height:1.3;margin-top:.3rem}
+.about-text{font-size:.93rem;color:var(--cream-dim);line-height:1.82;margin-bottom:1.4rem}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1.8rem}
+.pillar{background:var(--bg-card);border:1px solid var(--border);border-radius:.9rem;padding:1.2rem}
+.pillar-title{font-family:'Cormorant Garamond',serif;font-size:1rem;color:var(--cream);margin-bottom:.2rem}
+.pillar-desc{font-size:.76rem;color:var(--cream-dim);line-height:1.5}
+
+/* ── TESTIMONIAL ── */
+#temoignage{text-align:center}
+.testi-card{background:var(--bg-card);border:1px solid var(--border);border-radius:1.8rem;padding:3rem;max-width:680px;margin:3rem auto 0;position:relative}
+.quote{font-family:'Cormorant Garamond',serif;font-size:5rem;color:var(--gold);opacity:.25;line-height:0;position:absolute;top:2rem;left:2.2rem}
+.testi-text{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-style:italic;color:var(--cream);line-height:1.75;margin-bottom:2rem;padding-top:.8rem}
+.testi-author{display:flex;align-items:center;gap:1rem;justify-content:center}
+.author-av{width:44px;height:44px;border-radius:50%;background:var(--bg-card2);border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center}
+.author-name{font-weight:500;color:var(--cream);font-size:.88rem}
+.author-role{font-size:.75rem;color:var(--muted)}
+
+/* ── FAQ ── */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:3rem}
+.faq-item{background:var(--bg-card);border:1px solid var(--border);border-radius:1.2rem;overflow:hidden;transition:border-color .3s}
+.faq-item.open{border-color:rgba(200,144,44,.38)}
+.faq-q{width:100%;background:none;border:none;padding:1.4rem;text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;font-family:'Inter',sans-serif;font-size:.875rem;font-weight:500;color:var(--cream);transition:color .3s}
+.faq-q:hover{color:var(--gold)}
+.faq-ic{width:22px;height:22px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;color:var(--gold);transition:all .3s}
+.faq-item.open .faq-ic{transform:rotate(45deg);background:rgba(200,144,44,.1);border-color:rgba(200,144,44,.38)}
+.faq-ans{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.faq-ans-in{padding:0 1.4rem 1.4rem;font-size:.855rem;color:var(--cream-dim);line-height:1.72}
+
+/* ── CONTACT ── */
+.contact-box{background:var(--bg-card);border:1px solid var(--border);border-radius:1.8rem;overflow:hidden}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr}
+.contact-l{padding:3.5rem;background:linear-gradient(135deg,rgba(192,80,26,.09),rgba(200,144,44,.04));border-right:1px solid var(--border)}
+.contact-r{padding:3.5rem}
+.contact-title{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--cream);margin-bottom:1rem}
+.contact-desc{font-size:.88rem;color:var(--cream-dim);line-height:1.75;margin-bottom:2.2rem}
+.contact-feats{list-style:none}
+.contact-feats li{display:flex;align-items:flex-start;gap:.7rem;font-size:.855rem;color:var(--cream-dim);padding:.55rem 0}
+.cf-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0;margin-top:.55rem}
+.form-group{margin-bottom:1.15rem}
+.form-label{display:block;font-size:.7rem;font-weight:500;color:var(--cream-dim);letter-spacing:.06em;text-transform:uppercase;margin-bottom:.45rem}
+.form-input,.form-select{width:100%;background:rgba(244,230,200,.03);border:1px solid var(--border);border-radius:.72rem;padding:.82rem 1rem;font-family:'Inter',sans-serif;font-size:.855rem;color:var(--cream);outline:none;transition:border-color .3s;-webkit-appearance:none;appearance:none}
+.form-input::placeholder{color:var(--muted)}
+.form-input:focus,.form-select:focus{border-color:rgba(200,144,44,.48)}
+.form-input.error,.form-select.error{border-color:var(--error)}
+.form-select option{background:#1a110a;color:var(--cream)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-error-msg{background:rgba(224,82,82,.08);border:1px solid rgba(224,82,82,.28);border-radius:.72rem;padding:.75rem 1rem;font-size:.82rem;color:#f08080;margin-bottom:1rem;display:none}
+.form-success{text-align:center;padding:2.5rem 1rem;display:none}
+.success-check{width:54px;height:54px;border-radius:50%;background:rgba(42,110,69,.12);border:1.5px solid rgba(42,110,69,.35);display:flex;align-items:center;justify-content:center;margin:0 auto 1.2rem;color:#6ecf9a;font-size:1.4rem;font-weight:300}
+.success-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--cream);margin-bottom:.6rem}
+.success-desc{font-size:.875rem;color:var(--cream-dim);line-height:1.7}
+.btn-submit{width:100%;background:var(--terra);color:#fff;border:none;padding:1rem;border-radius:2rem;font-family:'Inter',sans-serif;font-size:.92rem;font-weight:500;cursor:pointer;margin-top:.4rem;transition:all .3s;box-shadow:0 4px 20px rgba(192,80,26,.28)}
+.btn-submit:hover:not(:disabled){background:var(--terra-h);transform:translateY(-1px)}
+.btn-submit:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.cal-link{display:block;text-align:center;margin-top:1rem;font-size:.8rem;color:var(--muted)}
+.cal-link a{color:var(--gold);text-decoration:none}
+.cal-link a:hover{text-decoration:underline}
+
+/* ── FOOTER ── */
+footer{border-top:1px solid var(--border);padding:2rem;text-align:center;font-size:.78rem;color:var(--muted)}
+footer a{color:var(--cream-dim);text-decoration:none}
+
+/* ── RESPONSIVE ── */
+@media(max-width:900px){
+  .nav-links{display:none}
+  .burger{display:flex}
+  .prob-grid,.price-grid{grid-template-columns:1fr}
+  .sol-grid{grid-template-columns:1fr}
+  .sol-box{position:static}
+  .about-grid{grid-template-columns:1fr;gap:3rem}
+  .pillars{grid-template-columns:1fr 1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .contact-inner{grid-template-columns:1fr}
+  .contact-l{border-right:none;border-bottom:1px solid var(--border)}
+  .form-row{grid-template-columns:1fr}
+  .p-card.feat{transform:none}
+  .p-card.feat:hover{transform:translateY(-4px)}
+  .hero-stats{gap:1.8rem}
+  body{padding-bottom:5rem}
+}
+@media(max-width:480px){
+  .section-wrap{padding:4rem 1.25rem}
+  .contact-l,.contact-r{padding:2rem 1.5rem}
+  .testi-card{padding:2rem 1.5rem}
+  .pillars{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- Lang switcher -->
+<div class="lang-sw">
+  <button class="lang-btn active" onclick="setLang('fr')">FR</button>
+  <button class="lang-btn" onclick="setLang('en')">EN</button>
+</div>
+
+<!-- Sticky mobile CTA (shown after hero on mobile) -->
+<div class="sticky-cta" id="sticky-cta">
+  <a href="#contact" data-t="hero.cta1">Réserver un appel gratuit →</a>
+</div>
+
+<!-- Nav -->
+<nav id="nav">
+  <a href="#hero" class="logo">Africa<span>Bridge</span></a>
+  <ul class="nav-links">
+    <li><a href="#probleme" data-t="nav.prob">Le problème</a></li>
+    <li><a href="#solution" data-t="nav.sol">La solution</a></li>
+    <li><a href="#offres" data-t="nav.off">Offres</a></li>
+    <li><a href="#abdoulaye" data-t="nav.abt">Abdoulaye</a></li>
+    <li><a href="#contact" class="nav-cta" data-t="nav.cta">Réserver un appel</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav -->
+<div class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation">
+  <button class="mobile-close" id="mobile-close" aria-label="Fermer">&#x2715;</button>
+  <a href="#probleme" data-t="nav.prob" onclick="closeMobile()">Le problème</a>
+  <a href="#solution" data-t="nav.sol" onclick="closeMobile()">La solution</a>
+  <a href="#offres" data-t="nav.off" onclick="closeMobile()">Offres</a>
+  <a href="#abdoulaye" data-t="nav.abt" onclick="closeMobile()">Abdoulaye</a>
+  <a href="#contact" onclick="closeMobile()" style="color:var(--gold)" data-t="nav.cta">Réserver un appel</a>
+</div>
+
+<!-- ══ HERO ══ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span data-t="hero.badge">Accompagnement Entrepreneurial · Diaspora Africaine</span>
+    </div>
+    <h1 class="hero-title" data-t-html="hero.title">
+      Lancez votre entreprise<br>en Afrique,<br><em>en 3 mois.</em>
+    </h1>
+    <p class="hero-sub" data-t="hero.sub">
+      Vous êtes en Europe, vous avez un projet en Afrique de l'Ouest ou Centrale.
+      Je vous guide étape par étape jusqu'à vos premiers revenus.
+    </p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-p" data-t="hero.cta1">Réserver un appel gratuit →</a>
+      <a href="#solution" class="btn-s" data-t="hero.cta2">Découvrir l'accompagnement</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-n">3</div><div class="stat-l" data-t="hero.s1">mois jusqu'aux premiers revenus</div></div>
+      <div><div class="stat-n">1:1</div><div class="stat-l" data-t="hero.s2">accompagnement personnalisé</div></div>
+      <div><div class="stat-n">5+</div><div class="stat-l" data-t="hero.s3">pays couverts en Afrique</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ PROBLÈME ══ -->
+<section id="probleme" class="section-wrap">
+  <div class="label" data-t="prob.label">Le problème</div>
+  <h2 class="section-title fade" data-t="prob.title">Pourquoi la plupart échouent avant même de commencer</h2>
+  <p class="section-sub fade" data-t="prob.sub">Avoir l'idée ne suffit pas. Les obstacles sont réels, et sous-estimés par ceux qui n'ont jamais créé depuis l'étranger.</p>
+  <div class="prob-grid">
+    <div class="prob-card fade">
+      <div class="prob-icon">01</div>
+      <h3 data-t="prob.c1.t">Juridique & Administratif</h3>
+      <p data-t="prob.c1.d">Créer une SARL au Sénégal depuis Paris, ouvrir un compte bancaire professionnel, obtenir les licences… chaque étape est un mur sans guide local.</p>
+    </div>
+    <div class="prob-card fade d1">
+      <div class="prob-icon">02</div>
+      <h3 data-t="prob.c2.t">Culture Business Locale</h3>
+      <p data-t="prob.c2.d">Les codes sont différents. Les négociations, les prix, la confiance : ce qui fonctionne en Europe peut être contre-productif à Abidjan ou Douala.</p>
+    </div>
+    <div class="prob-card fade d2">
+      <div class="prob-icon">03</div>
+      <h3 data-t="prob.c3.t">Gestion à Distance</h3>
+      <p data-t="prob.c3.d">Manager une équipe, superviser des opérations, gérer la trésorerie — tout ça depuis l'Europe, avec le décalage horaire et les imprévus locaux.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SOLUTION ══ -->
+<section id="solution" class="section-wrap">
+  <div class="label" data-t="sol.label">La solution</div>
+  <h2 class="section-title fade" data-t="sol.title">Un accompagnement 1-to-1 structuré sur 3 mois</h2>
+  <p class="section-sub fade" data-t="sol.sub">Pas de formation générique. Pas de modèles préfabriqués. Un suivi personnalisé, adapté à votre projet, votre pays cible, et votre situation en Europe.</p>
+
+  <div class="sol-grid">
+    <div class="timeline">
+      <div class="month fade">
+        <div class="m-dot">1</div>
+        <div class="m-body">
+          <div class="m-label" data-t="sol.m1.lbl">Mois 1</div>
+          <div class="m-title" data-t="sol.m1.title">Fondations</div>
+          <ul class="m-list">
+            <li data-t="sol.m1.i1">Validation du modèle économique local</li>
+            <li data-t="sol.m1.i2">Structure juridique adaptée au pays cible</li>
+            <li data-t="sol.m1.i3">Étude de marché et positionnement</li>
+            <li data-t="sol.m1.i4">Roadmap des 90 jours</li>
+          </ul>
+        </div>
+      </div>
+      <div class="month fade d1">
+        <div class="m-dot">2</div>
+        <div class="m-body">
+          <div class="m-label" data-t="sol.m2.lbl">Mois 2</div>
+          <div class="m-title" data-t="sol.m2.title">Construction</div>
+          <ul class="m-list">
+            <li data-t="sol.m2.i1">Création de l'entité légale</li>
+            <li data-t="sol.m2.i2">Mise en place des outils de gestion à distance</li>
+            <li data-t="sol.m2.i3">Recrutement et partenaires locaux</li>
+            <li data-t="sol.m2.i4">Première offre commerciale</li>
+          </ul>
+        </div>
+      </div>
+      <div class="month fade d2">
+        <div class="m-dot">3</div>
+        <div class="m-body">
+          <div class="m-label" data-t="sol.m3.lbl">Mois 3</div>
+          <div class="m-title" data-t="sol.m3.title">Lancement</div>
+          <ul class="m-list">
+            <li data-t="sol.m3.i1">Acquisition des premiers clients</li>
+            <li data-t="sol.m3.i2">Système de gestion à distance opérationnel</li>
+            <li data-t="sol.m3.i3">Premiers revenus encaissés</li>
+            <li data-t="sol.m3.i4">Plan de croissance post-accompagnement</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sol-box fade d1">
+      <div class="result-pill"><span data-t="sol.pill">Résultat visé</span></div>
+      <div class="result-n">3</div>
+      <div class="result-unit" data-t="sol.unit">mois</div>
+      <div class="result-sub" data-t="sol.rsub">Pour passer de l'idée aux premiers revenus</div>
+      <div class="sol-note" style="margin-top:1.8rem" data-t="sol.note">Pour les 18–35 ans de la diaspora africaine vivant en Europe, prêts à passer à l'action.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ OFFRES ══ -->
+<section id="offres" class="section-wrap">
+  <div class="label" data-t="price.label">Les offres</div>
+  <h2 class="section-title fade" data-t="price.title">Choisissez votre niveau d'accompagnement</h2>
+  <p class="section-sub fade" data-t="price.sub">Trois paliers pour s'adapter à votre projet et votre ambition. Paiement en plusieurs fois disponible.</p>
+
+  <div class="price-grid">
+    <div class="p-card fade">
+      <div class="plan-name" data-t="p.s.name">Starter</div>
+      <div class="plan-desc" data-t="p.s.desc">Pour valider votre concept et poser les premières briques.</div>
+      <ul class="plan-feats">
+        <li><span class="ck"></span><span data-t="p.s.f1">2 sessions stratégiques</span></li>
+        <li><span class="ck"></span><span data-t="p.s.f2">Analyse du marché cible</span></li>
+        <li><span class="ck"></span><span data-t="p.s.f3">Guide juridique pays cible</span></li>
+        <li><span class="ck"></span><span data-t="p.s.f4">Roadmap personnalisée 90 jours</span></li>
+        <li><span class="ck"></span><span data-t="p.s.f5">Support WhatsApp</span></li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-outline" data-t="p.cta">Commencer →</a>
+    </div>
+
+    <div class="p-card feat fade d1">
+      <div class="pop-badge" data-t="p.pop">Le plus choisi</div>
+      <div class="plan-name" data-t="p.l.name">Lancement</div>
+      <div class="plan-desc" data-t="p.l.desc">L'accompagnement complet pour lancer et générer vos premiers revenus.</div>
+      <ul class="plan-feats">
+        <li><span class="ck"></span><span data-t="p.l.f1">6 sessions stratégiques 1-to-1</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f2">Accompagnement sur les 3 mois complets</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f3">Création de l'entité juridique guidée</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f4">Mise en relation partenaires locaux</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f5">Support WhatsApp illimité</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f6">Outils de gestion à distance</span></li>
+        <li><span class="ck"></span><span data-t="p.l.f7">Stratégie d'acquisition premiers clients</span></li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-fill" data-t="p.cta.feat">Réserver mon appel gratuit →</a>
+    </div>
+
+    <div class="p-card fade d2">
+      <div class="plan-name" data-t="p.a.name">Accélération</div>
+      <div class="plan-desc" data-t="p.a.desc">Pour aller vite, fort, et construire des bases solides pour croître.</div>
+      <ul class="plan-feats">
+        <li><span class="ck"></span><span data-t="p.a.f1">Tout ce qui est inclus dans Lancement</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f2">Sessions illimitées</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f3">Levée de fonds & investisseurs locaux</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f4">Déplacement terrain dans le monde entier</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f5">Réseau exclusif diaspora entrepreneurs</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f6">Plan de croissance 12 mois</span></li>
+        <li><span class="ck"></span><span data-t="p.a.f7">Suivi post-lancement 1 mois offert</span></li>
+      </ul>
+      <a href="#contact" class="btn-plan btn-outline" data-t="p.cta">Commencer →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ ABDOULAYE ══ -->
+<section id="abdoulaye" class="section-wrap">
+  <div class="about-grid">
+    <div class="photo-wrap fade">
+      <div class="photo-box">
+        <img src="IMG_2556.jpg" alt="Abdoulaye, fondateur AfricaBridge" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+      </div>
+      <div class="photo-accent">
+        <div class="acc-n">2</div>
+        <div class="acc-l" data-t="abt.worlds">mondes,<br>une vision</div>
+      </div>
+    </div>
+
+    <div class="fade d1">
+      <div class="label" data-t="abt.label">Le fondateur</div>
+      <h2 class="section-title" data-t="abt.title">Je connais les deux côtés du pont.</h2>
+      <p class="about-text" data-t="abt.p1">Abdoulaye n'est pas un consultant qui vous parle de l'Afrique depuis un bureau parisien. Il a lui-même traversé ce que vous vivez : construire une entreprise sur le continent, avec les contraintes de la distance, les codes culturels, et les défis administratifs.</p>
+      <p class="about-text" data-t="abt.p2">Ancré entre l'Europe et l'Afrique de l'Ouest, il a développé une compréhension fine des deux écosystèmes. C'est précisément ce pont qu'il vous aide à traverser.</p>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-title" data-t="abt.p1t">Expérience terrain</div>
+          <div class="pillar-desc" data-t="abt.p1d">A créé et opéré une entreprise en Afrique de l'Ouest</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-title" data-t="abt.p2t">Double culture</div>
+          <div class="pillar-desc" data-t="abt.p2d">Comprend les codes business européens et africains</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-title" data-t="abt.p3t">Réseau local</div>
+          <div class="pillar-desc" data-t="abt.p3d">Contacts dans les pays cibles pour accélérer vos démarches</div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-title" data-t="abt.p4t">Diaspora first</div>
+          <div class="pillar-desc" data-t="abt.p4d">Spécialisé exclusivement dans l'accompagnement diaspora</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ TÉMOIGNAGE ══ -->
+<section id="temoignage" class="section-wrap">
+  <div class="label" data-t="testi.label">Témoignage</div>
+  <h2 class="section-title fade" data-t="testi.title">Ce que disent ceux qui ont franchi le pas</h2>
+  <div class="testi-card fade">
+    <div class="quote">"</div>
+    <p class="testi-text" data-t="testi.text">"Grâce à l'accompagnement d'Abdoulaye, j'ai pu ouvrir mon agence à Dakar en moins de 4 mois depuis Lyon. Il m'a évité des erreurs que j'aurais payées très cher, autant financièrement que relationnellement."</p>
+    <div class="testi-author">
+      <div class="author-av" style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:.95rem;color:var(--gold)">CN</div>
+      <div>
+        <div class="author-name" data-t="testi.name">Chérif N., Lyon</div>
+        <div class="author-role" data-t="testi.role">Agence de communication · Sénégal</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ FAQ ══ -->
+<section id="faq" class="section-wrap">
+  <div class="label">FAQ</div>
+  <h2 class="section-title fade" data-t="faq.title">Les questions fréquentes</h2>
+  <div class="faq-grid">
+    <div class="faq-item fade">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span data-t="faq.q1">Dois-je déjà avoir un projet précis pour commencer ?</span>
+        <span class="faq-ic" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-ans"><div class="faq-ans-in" data-t="faq.a1">Non, vous pouvez avoir une idée encore floue. La première session sert précisément à valider votre concept, affiner votre offre et identifier le pays le plus adapté. Ce qui compte, c'est votre motivation et votre envie de passer à l'action.</div></div>
+    </div>
+    <div class="faq-item fade d1">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span data-t="faq.q2">Est-ce que vous accompagnez tous les secteurs d'activité ?</span>
+        <span class="faq-ic" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-ans"><div class="faq-ans-in" data-t="faq.a2">La majorité des secteurs sont couverts : commerce, services, tech, agroalimentaire, immobilier, éducation, santé. L'appel de qualification préalable confirme si votre projet entre dans le cadre et comment l'accompagnement peut être personnalisé.</div></div>
+    </div>
+    <div class="faq-item fade d1">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span data-t="faq.q3">Faut-il se rendre en Afrique pendant les 3 mois ?</span>
+        <span class="faq-ic" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-ans"><div class="faq-ans-in" data-t="faq.a3">Pas forcément. L'accompagnement est conçu pour être opérationnel à 100% à distance. Un déplacement peut être recommandé selon votre projet, comme prévu dans l'offre Accélération, mais ce n'est pas une obligation pour Starter et Lancement.</div></div>
+    </div>
+    <div class="faq-item fade d2">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span data-t="faq.q4">Comment se passent les sessions de travail ?</span>
+        <span class="faq-ic" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-ans"><div class="faq-ans-in" data-t="faq.a4">Les sessions se font en visioconférence (Zoom ou Google Meet), avec un compte-rendu écrit après chaque session et des actions concrètes à réaliser. Entre les sessions, vous avez accès au support WhatsApp pour vos questions urgentes.</div></div>
+    </div>
+    <div class="faq-item fade d2">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        <span data-t="faq.q5">Et si mon projet n'est pas encore financé ?</span>
+        <span class="faq-ic" aria-hidden="true">+</span>
+      </button>
+      <div class="faq-ans"><div class="faq-ans-in" data-t="faq.a5">L'accompagnement inclut une réflexion sur le financement de votre projet. Certains clients utilisent leurs économies, d'autres cherchent des investisseurs ou des prêts diaspora. Dans l'offre Accélération, une stratégie de levée de fonds locale est incluse.</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CONTACT ══ -->
+<section id="contact" class="section-wrap">
+  <div class="contact-box">
+    <div class="contact-inner">
+      <div class="contact-l">
+        <div class="label" data-t="ct.label">Premier pas</div>
+        <h2 class="contact-title" data-t="ct.title">Votre entreprise en Afrique commence ici.</h2>
+        <p class="contact-desc" data-t="ct.desc">Remplissez ce formulaire de pré-qualification. Si votre profil correspond, vous recevrez un lien pour réserver un appel gratuit de 30 minutes avec Abdoulaye.</p>
+        <ul class="contact-feats">
+          <li><span class="cf-dot"></span><span data-t="ct.f1">Appel 100% gratuit, sans engagement</span></li>
+          <li><span class="cf-dot"></span><span data-t="ct.f2">Réponse sous 24–48h</span></li>
+          <li><span class="cf-dot"></span><span data-t="ct.f3">Session en français ou en anglais</span></li>
+          <li><span class="cf-dot"></span><span data-t="ct.f4">Pas de pression, pas de vente forcée</span></li>
+        </ul>
+      </div>
+      <div class="contact-r">
+        <!-- Form state -->
+        <div id="form-wrap">
+          <div id="form-error-msg" class="form-error-msg" role="alert"></div>
+          <form id="qform" novalidate>
+            <!-- Honeypot: hidden from users, filled only by bots -->
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;pointer-events:none">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="f-name" data-t="f.fn">Prénom</label>
+                <input type="text" id="f-name" name="prenom" class="form-input" placeholder="Kofi" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-email" data-t="f.em">Email</label>
+                <input type="email" id="f-email" name="email" class="form-input" placeholder="kofi@example.com" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="f-eu" data-t="f.eu">Pays en Europe</label>
+                <select id="f-eu" name="pays_europe" class="form-select" required>
+                  <option value="" data-t="f.sel">Sélectionner…</option>
+                  <option>France</option><option>Belgique</option><option>Suisse</option>
+                  <option>Pays-Bas</option><option>Allemagne</option><option>Espagne</option>
+                  <option>Italie</option><option>Portugal</option><option>Royaume-Uni</option>
+                  <option data-t="f.oth">Autre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-af" data-t="f.af">Pays cible en Afrique</label>
+                <select id="f-af" name="pays_afrique" class="form-select" required>
+                  <option value="" data-t="f.sel">Sélectionner…</option>
+                  <option>Sénégal</option><option>Côte d'Ivoire</option><option>Cameroun</option>
+                  <option>Congo</option><option>Guinée</option><option>Bénin</option>
+                  <option>Togo</option><option>Mali</option><option>Burkina Faso</option>
+                  <option data-t="f.oth">Autre</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-st" data-t="f.st">Stade de votre projet</label>
+              <select id="f-st" name="stade" class="form-select" required>
+                <option value="" data-t="f.sel">Sélectionner…</option>
+                <option data-t="f.st1">Idée en cours de réflexion</option>
+                <option data-t="f.st2">Idée validée, prêt à lancer</option>
+                <option data-t="f.st3">Déjà commencé, besoin de structure</option>
+                <option data-t="f.st4">Entreprise existante, besoin d'accélérer</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-submit" id="submit-btn" data-t="f.sub">Envoyer ma candidature →</button>
+          </form>
+        </div>
+
+        <!-- Success state (shown after submit) -->
+        <div id="form-success" class="form-success">
+          <div class="success-check">&#10003;</div>
+          <div class="success-title" data-t="f.ok.title">Candidature reçue !</div>
+          <p class="success-desc" data-t="f.ok.desc">Merci pour votre message. Abdoulaye vous répondra dans les 24–48h avec la prochaine étape.</p>
+        </div>
+
+        <div class="cal-link" data-t-html="ct.cal">Ou réservez directement : <a href="https://calendly.com/abdoudiop2710/30min" target="_blank" rel="noopener noreferrer">Réserver sur Calendly</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AfricaBridge · <a href="mailto:africabridge@gmail.com">africabridge@gmail.com</a> · Tous droits réservés</p>
+</footer>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// SETUP: Create a free account at https://formspree.io
+//        then replace the endpoint below with your URL.
+// ═══════════════════════════════════════════════════════
+const FORMSPREE = 'https://formspree.io/f/mqejkgdg';
+
+// ── TRANSLATIONS ──
+const T = {
+fr: {
+  'nav.prob':'Le problème','nav.sol':'La solution','nav.off':'Offres','nav.abt':'Abdoulaye','nav.cta':'Réserver un appel',
+  'hero.badge':'Accompagnement Entrepreneurial · Diaspora Africaine',
+  'hero.title':'Lancez votre entreprise<br>en Afrique,<br><em>en 3 mois.</em>',
+  'hero.sub':"Vous êtes en Europe, vous avez un projet en Afrique de l'Ouest ou Centrale. Je vous guide étape par étape jusqu'à vos premiers revenus.",
+  'hero.cta1':'Réserver un appel gratuit →','hero.cta2':"Découvrir l'accompagnement",
+  'hero.s1':"mois jusqu'aux premiers revenus",'hero.s2':'accompagnement personnalisé','hero.s3':'pays couverts en Afrique',
+  'prob.label':'Le problème','prob.title':'Pourquoi la plupart échouent avant même de commencer',
+  'prob.sub':"Avoir l'idée ne suffit pas. Les obstacles sont réels, et sous-estimés par ceux qui n'ont jamais créé depuis l'étranger.",
+  'prob.c1.t':'Juridique & Administratif','prob.c1.d':"Créer une SARL au Sénégal depuis Paris, ouvrir un compte bancaire professionnel, obtenir les licences… chaque étape est un mur sans guide local.",
+  'prob.c2.t':'Culture Business Locale','prob.c2.d':"Les codes sont différents. Les négociations, les prix, la confiance : ce qui fonctionne en Europe peut être contre-productif à Abidjan ou Douala.",
+  'prob.c3.t':'Gestion à Distance','prob.c3.d':"Manager une équipe, superviser des opérations, gérer la trésorerie — tout ça depuis l'Europe, avec le décalage horaire et les imprévus locaux.",
+  'sol.label':'La solution','sol.title':'Un accompagnement 1-to-1 structuré sur 3 mois',
+  'sol.sub':"Pas de formation générique. Pas de modèles préfabriqués. Un suivi personnalisé, adapté à votre projet, votre pays cible, et votre situation en Europe.",
+  'sol.m1.lbl':'Mois 1','sol.m1.title':'Fondations','sol.m1.i1':'Validation du modèle économique local','sol.m1.i2':'Structure juridique adaptée au pays cible','sol.m1.i3':'Étude de marché et positionnement','sol.m1.i4':'Roadmap des 90 jours',
+  'sol.m2.lbl':'Mois 2','sol.m2.title':'Construction','sol.m2.i1':"Création de l'entité légale",'sol.m2.i2':'Mise en place des outils de gestion à distance','sol.m2.i3':'Recrutement et partenaires locaux','sol.m2.i4':'Première offre commerciale',
+  'sol.m3.lbl':'Mois 3','sol.m3.title':'Lancement','sol.m3.i1':'Acquisition des premiers clients','sol.m3.i2':'Système de gestion à distance opérationnel','sol.m3.i3':'Premiers revenus encaissés','sol.m3.i4':'Plan de croissance post-accompagnement',
+  'sol.pill':'Résultat visé','sol.unit':'mois','sol.rsub':"Pour passer de l'idée aux premiers revenus",
+  'sol.note':"Pour les 18–35 ans de la diaspora africaine vivant en Europe, prêts à passer à l'action.",
+  'price.label':'Les offres','price.title':"Choisissez votre niveau d'accompagnement",
+  'price.sub':"Trois paliers pour s'adapter à votre projet et votre ambition. Paiement en plusieurs fois disponible.",
+  'p.pop':'Le plus choisi','p.cta':'Commencer →','p.cta.feat':'Réserver mon appel gratuit →',
+  'p.s.name':'Starter','p.s.desc':'Pour valider votre concept et poser les premières briques.',
+  'p.s.f1':'2 sessions stratégiques','p.s.f2':'Analyse du marché cible','p.s.f3':'Guide juridique pays cible','p.s.f4':'Roadmap personnalisée 90 jours','p.s.f5':'Support WhatsApp',
+  'p.l.name':'Lancement','p.l.desc':"L'accompagnement complet pour lancer et générer vos premiers revenus.",
+  'p.l.f1':'6 sessions stratégiques 1-to-1','p.l.f2':'Accompagnement sur les 3 mois complets','p.l.f3':"Création de l'entité juridique guidée",'p.l.f4':'Mise en relation partenaires locaux','p.l.f5':'Support WhatsApp illimité','p.l.f6':'Outils de gestion à distance','p.l.f7':"Stratégie d'acquisition premiers clients",
+  'p.a.name':'Accélération','p.a.desc':'Pour aller vite, fort, et construire des bases solides pour croître.',
+  'p.a.f1':'Tout ce qui est inclus dans Lancement','p.a.f2':'Sessions illimitées','p.a.f3':'Levée de fonds & investisseurs locaux','p.a.f4':'Déplacement terrain dans le monde entier','p.a.f5':'Réseau exclusif diaspora entrepreneurs','p.a.f6':'Plan de croissance 12 mois','p.a.f7':'Suivi post-lancement 1 mois offert',
+  'abt.worlds':'mondes,\nune vision','abt.label':'Le fondateur','abt.title':'Je connais les deux côtés du pont.',
+  'abt.p1':"Abdoulaye n'est pas un consultant qui vous parle de l'Afrique depuis un bureau parisien. Il a lui-même traversé ce que vous vivez : construire une entreprise sur le continent, avec les contraintes de la distance, les codes culturels, et les défis administratifs.",
+  'abt.p2':"Ancré entre l'Europe et l'Afrique de l'Ouest, il a développé une compréhension fine des deux écosystèmes. C'est précisément ce pont qu'il vous aide à traverser.",
+  'abt.p1t':'Expérience terrain','abt.p1d':"A créé et opéré une entreprise en Afrique de l'Ouest",
+  'abt.p2t':'Double culture','abt.p2d':'Comprend les codes business européens et africains',
+  'abt.p3t':'Réseau local','abt.p3d':'Contacts dans les pays cibles pour accélérer vos démarches',
+  'abt.p4t':'Diaspora first','abt.p4d':"Spécialisé exclusivement dans l'accompagnement diaspora",
+  'testi.label':'Témoignage','testi.title':'Ce que disent ceux qui ont franchi le pas',
+  'testi.text':'"Grâce à l\'accompagnement d\'Abdoulaye, j\'ai pu ouvrir mon agence à Dakar en moins de 4 mois depuis Lyon. Il m\'a évité des erreurs que j\'aurais payées très cher, autant financièrement que relationnellement."',
+  'testi.name':'Chérif N., Lyon','testi.role':'Agence de communication · Sénégal',
+  'faq.title':'Les questions fréquentes',
+  'faq.q1':'Dois-je déjà avoir un projet précis pour commencer ?',
+  'faq.a1':"Non, vous pouvez avoir une idée encore floue. La première session sert précisément à valider votre concept, affiner votre offre et identifier le pays le plus adapté. Ce qui compte, c'est votre motivation et votre envie de passer à l'action.",
+  'faq.q2':"Est-ce que vous accompagnez tous les secteurs d'activité ?",
+  'faq.a2':"La majorité des secteurs sont couverts : commerce, services, tech, agroalimentaire, immobilier, éducation, santé. L'appel de qualification préalable confirme si votre projet entre dans le cadre et comment l'accompagnement peut être personnalisé.",
+  'faq.q3':'Faut-il se rendre en Afrique pendant les 3 mois ?',
+  'faq.a3':"Pas forcément. L'accompagnement est conçu pour être opérationnel à 100% à distance. Un déplacement peut être recommandé selon votre projet, comme prévu dans l'offre Accélération, mais ce n'est pas une obligation pour Starter et Lancement.",
+  'faq.q4':'Comment se passent les sessions de travail ?',
+  'faq.a4':"Les sessions se font en visioconférence (Zoom ou Google Meet), avec un compte-rendu écrit après chaque session et des actions concrètes à réaliser. Entre les sessions, vous avez accès au support WhatsApp pour vos questions urgentes.",
+  'faq.q5':"Et si mon projet n'est pas encore financé ?",
+  'faq.a5':"L'accompagnement inclut une réflexion sur le financement de votre projet. Certains clients utilisent leurs économies, d'autres cherchent des investisseurs ou des prêts diaspora. Dans l'offre Accélération, une stratégie de levée de fonds locale est incluse.",
+  'ct.label':'Premier pas','ct.title':'Votre entreprise en Afrique commence ici.',
+  'ct.desc':'Remplissez ce formulaire de pré-qualification. Si votre profil correspond, vous recevrez un lien pour réserver un appel gratuit de 30 minutes avec Abdoulaye.',
+  'ct.f1':'Appel 100% gratuit, sans engagement','ct.f2':'Réponse sous 24–48h',
+  'ct.f3':'Session en français ou en anglais','ct.f4':'Pas de pression, pas de vente forcée',
+  'f.fn':'Prénom','f.em':'Email','f.eu':'Pays en Europe','f.af':'Pays cible en Afrique',
+  'f.sel':'Sélectionner…','f.oth':'Autre',
+  'f.st':'Stade de votre projet','f.st1':'Idée en cours de réflexion','f.st2':'Idée validée, prêt à lancer',
+  'f.st3':'Déjà commencé, besoin de structure','f.st4':"Entreprise existante, besoin d'accélérer",
+  'f.sub':'Envoyer ma candidature →','f.sending':'Envoi en cours…',
+  'f.err.req':'Veuillez remplir tous les champs obligatoires.',
+  'f.err.email':'Adresse email invalide.',
+  'f.err.srv':'Une erreur est survenue. Réessayez ou écrivez à africabridge@gmail.com.',
+  'f.ok.title':'Candidature reçue !',
+  'f.ok.desc':'Merci pour votre message. Abdoulaye vous répondra dans les 24–48h avec la prochaine étape.',
+  'ct.cal':'Ou réservez directement : <a href="https://calendly.com/abdoudiop2710/30min" target="_blank" rel="noopener noreferrer">Réserver sur Calendly</a>',
+},
+en: {
+  'nav.prob':'The problem','nav.sol':'The solution','nav.off':'Offers','nav.abt':'Abdoulaye','nav.cta':'Book a call',
+  'hero.badge':'Entrepreneurial Coaching · African Diaspora',
+  'hero.title':'Launch your business<br>in Africa,<br><em>in 3 months.</em>',
+  'hero.sub':"You're in Europe, you have a project in West or Central Africa. I guide you step by step to your first revenue.",
+  'hero.cta1':'Book a free call →','hero.cta2':'Discover the program',
+  'hero.s1':'months to first revenue','hero.s2':'personalized coaching','hero.s3':'countries covered in Africa',
+  'prob.label':'The problem','prob.title':'Why most people fail before they even start',
+  'prob.sub':"Having an idea is not enough. The obstacles are real, and underestimated by those who've never built from abroad.",
+  'prob.c1.t':'Legal & Administrative','prob.c1.d':'Registering a company in Senegal from Paris, opening a professional bank account, getting licenses… every step is a wall without local guidance.',
+  'prob.c2.t':'Local Business Culture','prob.c2.d':'The codes are different. Negotiations, pricing, trust: what works in Europe can be counterproductive in Abidjan or Douala.',
+  'prob.c3.t':'Remote Management','prob.c3.d':'Managing a team, overseeing operations, handling cash flow — all from Europe, with time zone gaps and local unpredictability.',
+  'sol.label':'The solution','sol.title':'A structured 1-to-1 program over 3 months',
+  'sol.sub':'No generic training. No pre-built models. Personalized guidance, tailored to your project, your target country, and your situation in Europe.',
+  'sol.m1.lbl':'Month 1','sol.m1.title':'Foundations','sol.m1.i1':'Local business model validation','sol.m1.i2':'Legal structure adapted to your target country','sol.m1.i3':'Market research and positioning','sol.m1.i4':'90-day roadmap',
+  'sol.m2.lbl':'Month 2','sol.m2.title':'Building','sol.m2.i1':'Legal entity creation','sol.m2.i2':'Remote management tools setup','sol.m2.i3':'Recruitment and local partners','sol.m2.i4':'First commercial offer',
+  'sol.m3.lbl':'Month 3','sol.m3.title':'Launch','sol.m3.i1':'First client acquisition','sol.m3.i2':'Remote management system operational','sol.m3.i3':'First revenue collected','sol.m3.i4':'Post-program growth plan',
+  'sol.pill':'Target result','sol.unit':'months','sol.rsub':'From idea to first revenue',
+  'sol.note':"For the 18–35 year olds of the African diaspora in Europe, ready to take action.",
+  'price.label':'The offers','price.title':'Choose your coaching level',
+  'price.sub':'Three tiers to match your project and ambition. Installment payments available.',
+  'p.pop':'Most popular','p.cta':'Get started →','p.cta.feat':'Book my free call →',
+  'p.s.name':'Starter','p.s.desc':'To validate your concept and lay the first building blocks.',
+  'p.s.f1':'2 strategy sessions','p.s.f2':'Target market analysis','p.s.f3':'Legal guide for target country','p.s.f4':'Personalized 90-day roadmap','p.s.f5':'WhatsApp support',
+  'p.l.name':'Launch','p.l.desc':'The complete program to launch and generate your first revenue.',
+  'p.l.f1':'6 strategic one-to-one sessions','p.l.f2':'Full 3-month coaching','p.l.f3':'Guided legal entity creation','p.l.f4':'Introduction to local partners','p.l.f5':'Unlimited WhatsApp support','p.l.f6':'Remote management tools','p.l.f7':'First client acquisition strategy',
+  'p.a.name':'Acceleration','p.a.desc':'To move fast, strong, and build solid foundations for scaling.',
+  'p.a.f1':'Everything in Launch','p.a.f2':'Unlimited sessions','p.a.f3':'Fundraising & local investors','p.a.f4':'On-site visit anywhere in the world','p.a.f5':'Exclusive diaspora entrepreneur network','p.a.f6':'12-month growth plan','p.a.f7':'1-month post-launch follow-up included',
+  'abt.worlds':'worlds,\none vision','abt.label':'The founder','abt.title':'I know both sides of the bridge.',
+  'abt.p1':"Abdoulaye is not a consultant who talks about Africa from a Parisian office. He himself went through what you're experiencing: building a business on the continent, with the constraints of distance, cultural codes, and administrative hurdles.",
+  'abt.p2':'Rooted between Europe and West Africa, he has developed a deep understanding of both ecosystems. That bridge is exactly what he helps you cross.',
+  'abt.p1t':'Ground experience','abt.p1d':'Founded and operated a business in West Africa',
+  'abt.p2t':'Dual culture','abt.p2d':'Understands both European and African business codes',
+  'abt.p3t':'Local network','abt.p3d':'Contacts in target countries to accelerate your process',
+  'abt.p4t':'Diaspora first','abt.p4d':'Exclusively specialized in diaspora entrepreneurship coaching',
+  'testi.label':'Testimonial','testi.title':'What those who took the leap say',
+  'testi.text':'"Thanks to Abdoulaye\'s coaching, I was able to open my agency in Dakar in less than 4 months from Lyon. He helped me avoid mistakes that would have cost me dearly, financially and relationally."',
+  'testi.name':'Chérif N., Lyon','testi.role':'Communications agency · Senegal',
+  'faq.title':'Frequently asked questions',
+  'faq.q1':'Do I need to have a precise project to get started?',
+  'faq.a1':"No, you can have a vague idea. The first session is precisely for validating your concept, refining your offer and identifying the most suitable country. What matters is your motivation and drive to take action.",
+  'faq.q2':'Do you coach all types of businesses?',
+  'faq.a2':"Most sectors are covered: retail, services, tech, food, real estate, education, healthcare. The pre-qualification call confirms whether your project fits and how coaching can be personalized.",
+  'faq.q3':'Do I need to travel to Africa during the 3 months?',
+  'faq.a3':"Not necessarily. The program is designed to be 100% operational remotely. A trip may be recommended depending on your project, as included in the Acceleration offer, but it is not mandatory for Starter and Launch.",
+  'faq.q4':'How do the working sessions work?',
+  'faq.a4':'Sessions are held via video call (Zoom or Google Meet), with written notes after each session and concrete action steps. Between sessions, you have WhatsApp access for urgent questions.',
+  'faq.q5':"What if my project isn't funded yet?",
+  'faq.a5':"The program includes thinking through your project funding. Some clients use personal savings, others seek investors or diaspora loans. The Acceleration offer includes a local fundraising strategy.",
+  'ct.label':'First step','ct.title':'Your business in Africa starts here.',
+  'ct.desc':"Fill out this pre-qualification form. If your profile fits, you'll receive a link to book a free 30-minute call with Abdoulaye.",
+  'ct.f1':'100% free call, no commitment','ct.f2':'Response within 24–48h',
+  'ct.f3':'Session in French or English','ct.f4':'No pressure, no hard sell',
+  'f.fn':'First name','f.em':'Email','f.eu':'Country in Europe','f.af':'Target country in Africa',
+  'f.sel':'Select…','f.oth':'Other',
+  'f.st':'Project stage','f.st1':'Idea in progress','f.st2':'Validated idea, ready to launch',
+  'f.st3':'Already started, need structure','f.st4':'Existing business, need to scale',
+  'f.sub':'Submit my application →','f.sending':'Sending…',
+  'f.err.req':'Please fill in all required fields.',
+  'f.err.email':'Invalid email address.',
+  'f.err.srv':'An error occurred. Try again or email africabridge@gmail.com.',
+  'f.ok.title':'Application received!',
+  'f.ok.desc':'Thank you for your message. Abdoulaye will reply within 24–48h with the next step.',
+  'ct.cal':'Or book directly: <a href="https://calendly.com/abdoudiop2710/30min" target="_blank" rel="noopener noreferrer">Book on Calendly</a>',
+}};
+
+let lang = 'fr';
+
+function setLang(l) {
+  lang = l;
+  document.documentElement.lang = l;
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.textContent === l.toUpperCase()));
+  document.querySelectorAll('[data-t]').forEach(el => {
+    const v = T[l][el.getAttribute('data-t')];
+    if (v !== undefined) el.textContent = v;
+  });
+  document.querySelectorAll('[data-t-html]').forEach(el => {
+    const v = T[l][el.getAttribute('data-t-html')];
+    if (v !== undefined) el.innerHTML = v;
+  });
+  const ht = document.querySelector('.hero-title');
+  if (ht) ht.innerHTML = T[l]['hero.title'];
+}
+
+// ── NAV SCROLL + STICKY CTA ──
+window.addEventListener('scroll', () => {
+  const y = window.scrollY;
+  document.getElementById('nav').classList.toggle('scrolled', y > 60);
+
+  const hero = document.getElementById('hero');
+  const contact = document.getElementById('contact');
+  const sticky = document.getElementById('sticky-cta');
+  if (hero && contact && sticky) {
+    const pastHero = y > hero.offsetTop + hero.offsetHeight - 120;
+    const atContact = y + window.innerHeight > contact.offsetTop + 60;
+    sticky.classList.toggle('visible', pastHero && !atContact);
+  }
+}, { passive: true });
+
+// ── MOBILE NAV ──
+document.getElementById('burger').addEventListener('click', () => {
+  document.getElementById('mobile-nav').classList.add('open');
+});
+document.getElementById('mobile-close').addEventListener('click', closeMobile);
+function closeMobile() { document.getElementById('mobile-nav').classList.remove('open'); }
+
+// ── FAQ ──
+function toggleFaq(btn) {
+  const item = btn.parentElement;
+  const ans = item.querySelector('.faq-ans');
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-ans').style.maxHeight = '0';
+    i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+  });
+  if (!wasOpen) {
+    item.classList.add('open');
+    ans.style.maxHeight = ans.scrollHeight + 'px';
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+// ── SCROLL ANIMATIONS ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+
+// ── FORM ──
+const formErrorEl = document.getElementById('form-error-msg');
+
+function showError(msg) {
+  formErrorEl.textContent = msg;
+  formErrorEl.style.display = 'block';
+  formErrorEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+}
+
+function clearErrors() {
+  formErrorEl.style.display = 'none';
+  document.querySelectorAll('.form-input.error, .form-select.error').forEach(f => f.classList.remove('error'));
+}
+
+document.getElementById('qform').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  clearErrors();
+
+  // Honeypot: abort silently if filled by a bot
+  const honey = this.querySelector('[name="_gotcha"]');
+  if (honey && honey.value) return;
+
+  // Required field check
+  let valid = true;
+  this.querySelectorAll('[required]').forEach(f => {
+    if (!f.value.trim()) { f.classList.add('error'); valid = false; }
+  });
+  if (!valid) { showError(T[lang]['f.err.req']); return; }
+
+  // Email format check
+  const emailEl = this.querySelector('[type="email"]');
+  if (emailEl && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailEl.value.trim())) {
+    emailEl.classList.add('error');
+    showError(T[lang]['f.err.email']);
+    return;
+  }
+
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = T[lang]['f.sending'];
+
+  try {
+    const res = await fetch(FORMSPREE, {
+      method: 'POST',
+      body: new FormData(this),
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok) {
+      document.getElementById('form-wrap').style.display = 'none';
+      const success = document.getElementById('form-success');
+      success.style.display = 'block';
+      setLang(lang); // refresh translated success text
+    } else {
+      throw new Error('server');
+    }
+  } catch {
+    btn.disabled = false;
+    btn.textContent = T[lang]['f.sub'];
+    showError(T[lang]['f.err.srv']);
+  }
+});
+
+// Clear field errors on user input
+document.querySelectorAll('.form-input, .form-select').forEach(f => {
+  f.addEventListener('input', () => f.classList.remove('error'));
+  f.addEventListener('change', () => f.classList.remove('error'));
+});
+
+// ── SMOOTH SCROLL ──
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+</body>
+</html>
